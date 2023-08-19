@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div style="color:rgb(240, 16, 13)">
+    <form action="{{ url_for('index')}}" method="post">
+        <h2>URL SHORTENER</h2>
+        <input type="text" name="long_url" placeholder="Enter your URl">
+
+      <br><br><button id="sub" type="submit ">Shorten the URL</button>
+      <br>
+    
+    </form>
+
+
+
+      <br><br><h3>{{ output }}<h3>
+</div>
+<style>
+  body {
+      background-color: rgba(4, 22, 40, 0.875);
+      text-align: center;
+      padding: 100px;
+  }
+  
+  #research {
+      font-size: 18px;
+      width: 100px;
+      height: 43px;
+      top: 23px;
+  }
+  
+  #box {
+      border-radius: 180px;
+      border-color: 45px;
+      border-style: solid;
+      font-family: cursive;
+      text-align: center;
+      background-color: coral;
+      font-size: medium;
+      position: absolute;
+      width: 1000px;
+      bottom: 9%;
+      height: 850px;
+      right: 30%;
+      padding: 0px;
+      margin: 0px;
+      font-size: 140px;
+  }
+  #sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #sub:hover {
+            background-color: darkcyan;
+        }
+        
+</style>
+  
+</body>
+</html>
